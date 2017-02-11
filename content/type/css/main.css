@@ -72,14 +72,14 @@
 	list-style: none;
 	margin: 5px;
 	padding: 5px;
-	border: #CCC 1px solid;
+	/* border: #CCC 1px solid;*/
 	border-radius: 3px;
 }
 
 .prev-list > li > a,
 .prev-list > li > a:visited {
 	text-decoration: none;
-	color: blue;
+	color: #4183c4;
 }
 
 /* sticky right rail */
