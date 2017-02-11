@@ -1,5 +1,6 @@
 output
 tmp
+.sass-cache
 .bundle
 crash.log
 
