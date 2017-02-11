@@ -1,0 +1,59 @@
+[[/content/static/logo/gravatar/gravatar-128x128.png]]
+
+* Nanoc-Plate(http://nanoc-plate.github.io)
+
+** Introduction
+
+Nanoc-Plate is a [[http://nanoc.ws/][nanoc]] bundle for building static web sites happily.
+
+** Internals
+
+- [[https://github.com/nanoc/nanoc][Nanoc]]
+- [[https://jquery.com][jQuery]]
+- [[http://semantic-ui.com/][Semantic-UI]]
+- [[http://pandoc.org/][Pandoc]]
+- [[http://www.linuxlibertine.org/][Linux Libertine]]
+
+** Features
+- Support multiple [[http://en.wikipedia.org/wiki/Comparison_of_document_markup_languages][documentation markup language]] via [[http://johnmacfarlane.net/pandoc/][pandoc]]
+  - [[http://johnmacfarlane.net/pandoc/][markdown]]
+  - [[http://orgmode.org][org]]
+  - [[http://docutils.sourceforge.net/rst.html][rst]]
+- Smooth workflow based on [[http://nanoc.ws/][nanoc]], [[https://github.com/ruby/rake][rake]], [[http://guardgem.org/][guard]] and [[http://browsersync.io/][browsersync]]
+- Posts
+  - categories support
+  - tags support
+  - atom generation
+- Sitemap generation
+- [[http://www.robotstxt.org/][robots.txt]] and [[http://humanstxt.org/][humans.txt]]
+- [[http://www.google.com/analytics/][Google Analytics]] for web statistics
+- [[https://disqus.com/][Disqus]] for commenting
+
+** Getting Started
+
+First you need to install [[https://www.ruby-lang.org/en/documentation/installation/][ruby]]. I myself am a fan of [[https://github.com/rbenv/rbenv][rbenv]]. Besides, you should
+get [[http://bundler.io/][bundler]] by ~gem install bundler~, which is the de facto package manager for
+ruby.
+
+Optionally, you'd better install [[https://nodejs.org/en/download/][Node.js]]. [[https://github.com/tj/n][n]] may be a good choice.
+
+After that, I recommend you to install [[https://browsersync.io/][browsersync]] which is a wonderful
+time-saving synchronised browser testing by ~npm install -g browser-sync~. Maybe
+you need ~sudo~ for ~npm install -g~ if you install Node.js by root privilege.
+
+Finally, you can get nanoc-plate:
+
+#+BEGIN_SRC sh
+git clone https://github.com/nanoc-plate/nanoc-plate.git
+cd nanoc-plate
+bundle install
+bundle exec nanoc compile
+cd output
+browser-sync start --server --files="**/*"
+#+END_SRC
+
+Blah, you should have a browser window/tab poped up with its url set to
+~http://localhost:3000~, and a page showing the default index page of
+nanoc-plate.
+
+Now, you can start to brew your own site.

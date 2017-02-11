@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Type</title>
+	<link rel="stylesheet" href="/type/css/main.css">
+</head>
+<body>
+
+  <div class="row">
+	<div class="ui basic segment" id="toolbar">
+		<button class="ui labeled icon blue button" id="back">
+      <i class="left chevron icon"></i>
+      Back
+    </button>
+	</div>
+	</div>
+
+  <div class="row">
+  </div>
+
+	<div class="ui grid" id="content">
+		<noscript>
+			<div class="error">
+				JavaScript must be enabled.
+			</div>
+			<br>
+		</noscript>
+
+  <div class="row">
+    <div class="ui basic segment">
+		  <h1 class="ui right floated block header" id="repo-title"></h1>
+      <i class="github huge icon"></i>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="ui basic segment">
+		<h2>New File</h2>
+		<form class="ui form" id="form">
+      <div class="field">
+        <label>
+          Path to the file you want to type:
+        </label>
+        <div class="ui left icon input">
+          <i class="folder open icon"></i>
+        <input type="text" id="file" placeholder="src/main.py" required="true">
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui right icon input" style="width:6rem;">
+			<input class="ui positive button" type="submit" value="Type">
+      <i class="keyboard icon"></i>
+      </div>
+		</form>
+	  </div>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="ui basic segment">
+		<h2>Previous Files</h2>
+		<div class="ui list">
+			<ul class="prev-list" id="prev-files"></ul>
+		</div>
+    </div>
+    </div>
+
+    </div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.4.2/localforage.min.js"></script>
+	<script src="/type/js/repo.js"></script>
+</body>
+</html>

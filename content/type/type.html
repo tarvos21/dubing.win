@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Type</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/codemirror.min.css">
+	<link rel="stylesheet" href="/type/css/main.css">
+</head>
+<body>
+	
+	<noscript>
+		<div class="error">
+			JavaScript must be enabled.
+		</div>
+		<br>
+	</noscript>
+
+  <div class="row">
+    <div class="fourteen wide column">
+	<div class="ui basic segment" id="content">
+		<textarea id="editor"></textarea>
+	</div>
+	</div>
+  </div>
+
+  <div class="ui dividing right rail" id="sticky">
+    <div class="ui sticky">
+
+      <div class="ui basic segment">
+		<button class="ui icon blue button" id="back">
+      <i class="left chevron icon"></i>
+      Back
+    </button>
+    </div>
+
+		<div class="ui black inverted basic segment" id="info" style="width:150px;">
+      <div class="ui mini yellow inverted statistic">
+        <div class="value">
+        <span id="wpm">NULL</span>
+			  <span id="paused"></span>
+        </div>
+        <div class="label">Words per Minute</div>
+      </div>
+  </div>
+
+    <div class="ui basic segment">
+      <div class="ui form">
+      <div class="field">
+        <label>Languages:</label>
+		<select class="ui compact search dropdown" id="language" style="width:150px;">
+      <label>Languages:</label>
+			<option value="auto-detect">Auto-Detect</option>
+		</select>
+      </div>
+
+      <div class="field">
+        <label>Theme:</label>
+		<select class="ui labeled search compact dropdown" id="theme" style="width:150px;">
+			<option value="default">Default</option>
+			<option value="3024-day">3024 Day</option>
+			<option value="3024-night">3024 Night</option>
+			<option value="abcdef">abcdef</option>
+			<option value="ambiance-mobile">Ambiance Mobile</option>
+			<option value="ambiance">Ambiance</option>
+			<option value="base16-dark">Base16 Dark</option>
+			<option value="base16-light">Base16 Light</option>
+			<option value="bespin">Bespin</option>
+			<option value="blackboard">Blackboard</option>
+			<option value="cobalt">Cobalt</option>
+			<option value="colorforth">Colorforth</option>
+			<option value="dracula">Dracula</option>
+			<option value="eclipse">Eclipse</option>
+			<option value="elegant">Elegant</option>
+			<option value="erlang-dark">Erlang Dark</option>
+			<option value="hopscotch">Hopscotch</option>
+			<option value="icecoder">Icecoder</option>
+			<option value="isotope">Isotope</option>
+			<option value="lesser-dark">Lesser Dark</option>
+			<option value="liquibyte">Liquibyte</option>
+			<option value="material">Material</option>
+			<option value="mbo">mbo</option>
+			<option value="mdn-like">MDN Like</option>
+			<option value="midnight">Midnight</option>
+			<option value="monokai">Monokai</option>
+			<option value="neat">Neat</option>
+			<option value="neo">Neo</option>
+			<option value="night">Night</option>
+			<option value="panda-syntax">Panda Syntax</option>
+			<option value="paraiso-dark">Paraiso Dark</option>
+			<option value="paraiso-light">Pairaiso Light</option>
+			<option value="pastel-on-dark">Pastel on Dark</option>
+			<option value="railscasts">Railscasts</option>
+			<option value="rubyblue">Ruby Blue</option>
+			<option value="seti">Seti</option>
+			<option value="solarized">Solarized</option>
+			<option value="the-matrix">The Matrix</option>
+			<option value="tomorrow-night-bright">Tomorrow Night Bright</option>
+			<option value="tomorrow-night-eighties">Tomorrow Night Eighties</option>
+			<option value="ttcn">ttcn</option>
+			<option value="twilight">Twilight</option>
+			<option value="vibrant-ink">Vibrant Ink</option>
+			<option value="xq-dark">XQ Dark</option>
+			<option value="xq-light">XQ Light</option>
+			<option value="yeti">Yeti</option>
+			<option value="zenburn">Zenburn</option>
+		</select>
+  </div>
+  </div>
+  </div>
+
+      <div class="ui basic segment">
+		<button class="ui right icon green button" id="restart">
+      Restart
+      <i class="repeat icon"></i>
+    </button>
+    </div>
+
+    </div>
+    </div>
+
+
+<script>
+$(document).ready(function() {
+$('#sticky .ui.sticky').sticky({
+        silent: true,
+        context: $('article.ui.stackable.grid'),
+        //context: $container,
+        offset: 65
+});
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.4.2/localforage.min.js"></script>
+<script src="/type/js/languages.js"></script>
+<!--
+<script src="/static/dist/semantic-ui/semantic.js"></script>
+-->
+<script src="/type/js/type.js"></script>
+
+</body>
+</html>
+

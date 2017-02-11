@@ -1,0 +1,60 @@
+footer lang='en'
+  .ui.inverted.vertical.segment
+    .ui.center.aligned.container.grid
+        .item
+          form.ui.mini.form target="_blank" method="get" action="https://www.google.com/search"
+            input type="hidden" value="site:tarvos21.github.io" name="q"
+            .ui.mini.left.icon.input.focus
+              input type="text" placeholder="Search..." name="q"
+              i.search.icon
+        .item
+          p © 2017 by Bingo Du. No Rights Reserved.
+
+script src="/static/dist/semantic-ui/semantic.min.js"
+script src="/static/javascripts/ga.js"
+script src="/static/javascripts/default.js"
+
+.ui.modal
+  i.close.icon 
+  .header id="form-header"
+    | Hi, I am Bingo 
+    i.smile.icon
+    | , feel free to say anything. 
+  .content id="form-container"
+    form.ui.form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxEMaejmETCbkKci5wWUmfW532vaBXFRAbisS5KpNrRqROahug9/exec"
+
+      .field
+        label for="name" Name:
+        input id="name" name="name" placeholder="What you want me to call you"
+
+      .field
+        label for="message" Message:
+        textarea id="message" name="message" rows="7" placeholder="Tell me what's on your mind"
+
+      .field
+        label for="email" Your Email Address:
+        input id="email" name="email" type="email" value="" placeholder="your.name@email.com"
+
+      .grouped.fields
+        label Do you want a response in 3 days? 
+        .field
+          .ui.radio.checkbox
+            input type="radio" id="one" name="response" value="ASAP" checked="checked"
+            label Yes, the sooner the better
+
+        .field
+          .ui.radio.checkbox
+            input type="radio" id="two" value="Anytime" name="response" 
+            label Not really, any time will be OK
+
+        .field
+          .ui.radio.checkbox
+            input type="radio" id="three" value="NoResponse" name="response"
+            label No, please don't bother
+      button.ui.primary.button type="submit" Send
+
+  .ui.floating.massive.black.message  style="display:none;" id="thankyou_message"
+    .header
+      | Message sent successfully. Thanks a lot for contacting me. 
+
+script data-cfasync="false" type="text/javascript" src="/static/javascripts/form-submission-handler.js"

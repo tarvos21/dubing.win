@@ -1,0 +1,48 @@
+.article-body
+  > .ui.right.rail
+    margin-left: -1em
+    padding-left: 1em
+
+    .ui.header
+      margin-top: 1em!important
+
+.ui.article > .ui.grid > .row.article-body > aside.column
+  display: none
+
+.right.rail > .ui.article > .ui.grid > .row.article-body > aside.column
+  display: block
+
+p
+  font-size: 1rem
+  line-height: 1.4rem
+
+.ui.right.rail .ui.sticky aside.column .ui.item > a > .ui.label  
+  margin: 10px 0px 0px 0px 
+  padding: 4px 4px
+
+.ui.right.rail .ui.sticky aside.column .ui.item > .ui.label  
+  padding: 5px
+  margin: 0 2px 0px 0px 
+
+
+@media only screen and (min-width: 1200px)
+  .right.rail
+    left: 815px!important
+    width: 250px!important
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+  .right.rail
+    left: 685px!important
+    width: 215px!important
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  .right.rail
+    display: none
+    //left: 550px!important
+    //width: 160px!important
+  .ui.grid > .row > section.twelve.wide.column
+    width: 100%!important
+
+@media only screen and (max-width: 767px)
+  .right.rail
+    display: none

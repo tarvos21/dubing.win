@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Type</title>
+	<link rel="stylesheet" href="/type/css/main.css">
+</head>
+<body>
+	
+	<noscript>
+		<div class="error">
+			JavaScript must be enabled.
+		</div>
+		<br>
+	</noscript>
+
+  <div class="row">
+    <div class="ui center aligned container">
+      <div class="ui green inverted segment">
+      <h1 class="ui header">Type to Read</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="ui basic segment">
+	<h2 class="ui header">New Repo</h2>
+	<form class="ui form" id="form">
+    <div class="field">
+      <label>
+        <i class="github icon"></i>
+        GitHub repository you are interested in:
+      </label>
+        <div class="ui labeled input">
+          <div class="ui label">
+            https://github.com/
+          </div>
+		<input type="text" id="repo" placeholder="owner/repo" required="true">
+        </div>
+    </div>
+    <div class="field">
+      <label>
+        <i class="fork icon"></i>
+        Branch that the file is in:
+      </label>
+		<input type="text" id="branch" value="master" placeholder="master" required="true">
+    </div>
+    <div class="field">
+      <div class="ui right icon input" style="width:6rem;">
+      <i class="right chevron icon"></i>
+      <input class="ui positive compact button" type="submit" value="GO">
+      </div>
+    </div>
+	</form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="ui basic segment">
+  	<h2 class="ui header">Previous Repos</h2>
+
+    <div class="ui list">
+		  <ul class="prev-list" id="prev-repos"></ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="ui basic segment">
+	    <p><a href="/type/about.html">About Type</a></p>
+    </div>
+  </div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.4.2/localforage.min.js"></script>
+	<script src="/type/js/index.js"></script>
+</body>
+</html>

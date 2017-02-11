@@ -1,0 +1,34 @@
+/* TEAM */
+Developer: Du Bing
+Contact: tarvos21 [at] gmail.com
+Github: @Du Bing
+
+Designer: Du Bing
+Contact: tarvos21 [at] gmail.com
+Github: @Du Bing
+
+Writer: Du Bing
+Contact: tarvos21 [at] gmail.com
+Github: @Du Bing
+
+Maintainer: Du Bing
+Contact: tarvos21 [at] gmail.com
+Github: @Du Bing
+
+/* THANKS */
+Nanoc(http://nanoc.ws/)
+Github(https://github.com)
+Git(http://www.git-scm.com/)
+Pandoc(http://pandoc.org/)
+Emacs(https://www.gnu.org/software/emacs/)
+Spacemacs(https://github.com/syl20bnr/spacemacs)
+Org-mode(http://orgmode.org/)
+Linux Libertine(www.linuxlibertine.org/)
+Ruby(https://www.ruby-lang.org/)
+Semantic-UI(http://semantic-ui.com/)
+Nanoc-Plate(http://nanoc-plate.github.io/)
+
+/* SITE */
+Last updated: 2017/01/29
+Languages: Chinese/English
+Doctype: HTML5

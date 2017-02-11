@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    == render '/header.*'
+  body lang == (@item[:lang] || 'en')
+    #content
+      == render '/menu.*'
+      == yield
+
+    #footer
+      == render '/footer.*'
