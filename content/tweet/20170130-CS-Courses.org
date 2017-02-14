@@ -1,0 +1,15 @@
+---
+title: Computer Science Courses
+created_at: 2017-01-30 20:00:00
+kind: tweet 
+category: Learn
+tags:
+  - Computer Science
+---
+
+#+ATTR_HTML: target="_blank"
+- Udacity: Introduction to Computer Science
+- CS61A: The Structrue and Interpretation of Computer Programs(SICP)
+- CS61B: Data Science
+- Coursera: Princeton Algorithms(Sedgewick)
+- CMU152B: Computer Systems--A Programmers's Perspective(CSAPP)

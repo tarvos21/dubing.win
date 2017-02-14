@@ -22,3 +22,12 @@ def next_link
     link_to("Next", post.path, :class => "active green item", :title => title)
   end
 end
+
+def sorted_tweet
+  sorted = @items.find_all("/tweet/*.org").sort_by {|k| k[:created_at]}.reverse
+end
+
+def random_color
+  colors = ['red', 'orange', 'yellow', 'olive', 'green', 'teal', 'blue', 'violet', 'purple', 'pink', 'brown', 'grey', 'black']
+  random_color = colors.sample
+end

@@ -1,0 +1,10 @@
+- sorted_tweet.each do |tweet|
+  p == tweet.compiled_content
+- sorted_articles.each do |post|
+  .ui.container
+    .ui.basic.segment
+      h3.ui.header == link_to post[:title], post.path
+      h4.sub.header == attribute_to_time(post[:created_at]).strftime('%B %-d, %Y')
+      .ui.green.inverted.segment
+        p == post[:abstract]
+      .ui.hidden.divider
