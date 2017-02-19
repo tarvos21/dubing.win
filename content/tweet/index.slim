@@ -13,3 +13,11 @@
           .description
             h5.header == tweet.compiled_content
       </div>
+
+script src="/static/javascripts/masonry.pkgd.min.js"
+javascript:
+  $('.ui.stackable.grid').masonry({
+    itemSelector: '.ui.card',
+    percentPosition: true,
+    //columnWidth: 900
+  });
