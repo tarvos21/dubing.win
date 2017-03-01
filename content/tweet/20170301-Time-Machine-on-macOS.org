@@ -1,0 +1,11 @@
+---
+title: "Time Machine on macOS Sierra" 
+created_at: 2017-3-1 22:00:00 +0800
+kind: tweet 
+category: Technology
+tags:
+  - Time Machine 
+  - macOS Sierra 
+---
+
+Using Time Machine to backup 75GB data on macOS Sierra to a 1TB Toshiba external hard drive takes about 2 hours for the first time. However, if you choose to encrypt the hard drive, if will take 24-30 hours, which is a great challengae for your patience. But, never give up, my bro, it will end at last, I have done it myself.
