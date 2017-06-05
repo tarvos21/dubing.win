@@ -3,8 +3,8 @@
     .ui.basic.segment
       h1.header Bingo Du (杜兵 /&#716&#599&#650&#720&#712&#595&#618&#331/)
       hr
-      p I am a junior web developer for now(Feb, 2017), eager to improve my knowledge and skills in computer science and technology.
-      p I am located in Wuhan, China, looking for opportunities to work with fanatical and smart persons, remotely(better) or on-site, to make a difference to the world.
+      p I am a web developer for now(June, 2017), eager to improve my knowledge and skills in computer science and technology.
+      p I am located in Wuhan, China at present, looking for opportunities to work with fanatical and smart persons, to make a difference to the world.
       h2 Programming languages I can handle:
       ul.ui.list
         li Python
@@ -13,221 +13,261 @@
         li HTML / CSS
         li SQL
         li Ruby
-      h2 Frameworks I have experiences in:
+        li C
+      h2 Web frameworks I have experiences in:
       ul.ui.list
-        li Semantic-UI
+        li Semantic-UI, Bootstrap
         li jQuery
-        li Bootstrap
         li Flask
         li Nanoc
       h2 Tools I love to use:
       ul.ui.list
-        li Vim
+        li Vim, Spacemacs
         li Git
+        li Docker
         li Chrome Developer Tools
-        li Gulp 
-        li Tmux
-        li Bash / Oh-My-Zsh
-        li Spacemacs
+        li Gulp
+        li Bash, Oh-My-Zsh, Tmux
       br
+      p For interests and curiosity, I have also tried some machine learning libraries, including OpenAI Gym and Universe, Tensoflow, Keras and and Caffe. I have configured and run them successfully on the Google Cloud Platform VM and AWS Instances with Tesla K80 GPU.
       p My email is <strong>tarvos21@gmail.com</strong>, feel free to drop me anything interesting. You can also click <strong>"Contact Me"</strong> on the top right and send a message to me directly.
       hr
   .row
     .ui.basic.segment
-      .ui.big.primary.button data-tooltip="Less relevant with tech" data-position="right center" data-inverted="" data-variation="mini"
+      .ui.big.primary.button data-tooltip="Less relevant with tech" data-position="right center" data-inverted="" data-variation="mini" id="more_about"
         | More about me
 
-  .ui.center.aligned.container.grid
-    .row
-      .ui.blue.inverted.segment data-tooltip="Click buttons to roll the cube and discover 6 aspects of Bingo" data-variation="large" data-inverted="" data-position="top right"
-        .ui.primary.buttons
-          .ui.button data-tab="flip right" right
-          .ui.button data-tab="flip left" left
-          .ui.button data-tab="flip up" up
-          .ui.button data-tab="flip down" down
-          .ui.button data-tab="flip over" flip over
-          .ui.button data-tab="flip back" flip back
-    .row
-      .ui.basic.segment
-        .ui.cube.people.shape
-          .sides
-            .active.side
-              .ui.items
-                .item
-                  a.ui.medium.image href="http://www.zju.edu.cn/english/" target="_blank"
-                    img src="/static/images/zju.png"
-                    h3 To Cultivate Interdisciplinary Pioneers and Leaders with International Vision 
-                  .content
-                    .header Education
-                    .meta Sep, 2007 - Jun, 2012
-                    .descrition
-                      .ui.list
-                        .item
-                          i.student.icon
-                          .content
-                            | Bachelor degree in English Language and Literature at 
-                            a href="http://www.zju.edu.cn/english/" target="_blank"
-                              | Zhejiang University 
-                        .item
-                          i.thumbs.up.icon
-                          .content
-                            a href="https://en.wikipedia.org/wiki/College_English_Test#Test_for_English_Majors" target="_blank" TEM-8
-                            |  Certificate (Test for English Majors-Band 8, highest level in China) 
-                        
-                      .ui.ordered.mini.steps
-                        .disabled.step
-                          .content
-                            .title Administration College
-                            .meta Sep, 2007 - May, 2008
-                        .completed.step
-                          .content
-                            .title Foreign Language College <sup>1</sup>
-                            .meta May, 2008 - Jun, 2012
+  .ui.fullscreen.modal[id="more_modal"]
+      .ui.center.aligned.container.grid
+        .row
+          .ui.blue.inverted.segment data-tooltip="Click buttons to roll the cube and discover 6 aspects of Bingo" data-variation="large" data-inverted="" data-position="top right"
+            .ui.primary.buttons
+              .ui.button data-tab="flip right" Right
+              .ui.button data-tab="flip left" Left
+              .ui.button data-tab="flip up" Up
+              .ui.button data-tab="flip down" Down
+              .ui.button data-tab="flip over" Flip over
+              .ui.button data-tab="flip back" Flip back
+        .row
+          .ui.basic.segment
+            .ui.cube.people.shape
+              .sides
+                .active.side
+                  .ui.items
+                    .item
+                      a.ui.medium.image href="http://www.zju.edu.cn/english/" target="_blank"
+                        img src="/static/images/zju.png"
+                        h3 To Cultivate Interdisciplinary Pioneers and Leaders with International Vision
+                      .content
+                        .header Education
+                        .meta Sep, 2007 - Jun, 2012
+                        .descrition
+                          .ui.list
+                            .item
+                              i.student.icon
+                              .content
+                                | Bachelor degree in English Language and Literature at
+                                a href="http://www.zju.edu.cn/english/" target="_blank"
+                                  |  Zhejiang University
+                            .item
+                              i.thumbs.up.icon
+                              .content
+                                a href="https://en.wikipedia.org/wiki/College_English_Test#Test_for_English_Majors" target="_blank" TEM-8
+                                |  Certificate (Test for English Majors-Band 8, highest level in China)
+                          .ui.ordered.mini.steps
+                            .disabled.step
+                              .content
+                                .title Administration College
+                                .meta Sep, 2007 - May, 2008
+                            .completed.step
+                              .content
+                                .title Foreign Language College <sup>1</sup>
+                                .meta May, 2008 - Jun, 2012
 
-                      .ui.statistics
-                        .statistic
-                          .value 87
-                          .label Weighted Average Mark <sup>2</sup>
-                        .statistic
-                          .value 200
-                          .label Total Course Credits <sup>3</sup>
-                      .ui.divider
-                      p.note 1: I suspended college study for personal reason from Jun, 2010 to Sep, 2011
-                      p.note 2: Rank in the top 10 percent (full mark is 100)                       
-                      p.note 3: Requirement for graduation is 160 credits 
+                          .ui.statistics
+                            .statistic
+                              .value 87
+                              .label Weighted Average Mark <sup>2</sup>
+                            .statistic
+                              .value 200
+                              .label Total Course Credits <sup>3</sup>
+                          .ui.divider
+                          p.note 1: I suspended college study for personal reason from Jun, 2010 to Sep, 2011
+                          p.note 2: Rank in the top 10 percent (full mark is 100)
+                          p.note 3: Requirement for graduation is 160 credits
 
-            .active.side
-              .ui.items
-                .item
-                  .ui.slide.masked.reveal.medium.image
-                    img.visible.content src="/static/images/excellence.jpg"
-                    img.hidden.content src="/static/images/leaf.jpg"
-                  .content
-                    .header Awards and Honors
-                    .meta   
-                      .ui.hidden.divider
-                    .descrition
-                      .ui.list
-                        .item
-                          i.star.icon
-                          .content
-                            .header 2008: Student of Excellence, Zhejiang University
-                            .ui.hidden.divider
-                        .item
-                          i.star.icon
-                          .content
-                            .header 2008: Second Class Academic Scholarship, Zhejiang University
-                            .description Top 8% students in every college
-                            .ui.hidden.divider
-                        .item
-                          i.star.icon
-                          .content
-                            .header 2010: First Prize Winner of the 12th Campus Literature Competition, Zhejiang University
-                            .description The only one
-                            .ui.hidden.divider
-                        .item
-                          i.star.icon
-                          .content
-                            .header 2010: First Prize Winner of the 1st New-Leaf & Guangfa  Literature Competition, Zhejiang University
-                            .description The only one
-                            .ui.hidden.divider
+                .side
+                  .ui.items
+                    .item
+                      .ui.slide.masked.reveal.medium.image
+                        img.visible.content src="/static/images/excellence.jpg"
+                        img.hidden.content src="/static/images/leaf.jpg"
+                      .content
+                        .header Awards and Honors
+                        .meta
+                          .ui.hidden.divider
+                        .descrition
+                          .ui.list
+                            .item
+                              i.star.icon
+                              .content
+                                .header 2010: First Prize Winner of the 1st New-Leaf & Guangfa  Literature Competition, Zhejiang University
+                                .description The only one
+                                .ui.hidden.divider
+                            .item
+                              i.star.icon
+                              .content
+                                .header 2010: First Prize Winner of the 12th Campus Literature Competition, Zhejiang University
+                                .description The only one
+                                .ui.hidden.divider
+                            .item
+                              i.star.icon
+                              .content
+                                .header 2008: Second Class Academic Scholarship, Zhejiang University
+                                .description Top 8% students in every college
+                                .ui.hidden.divider
+                            .item
+                              i.star.icon
+                              .content
+                                .header 2008: Student of Excellence Prize, Zhejiang University
+                                .description Top 13% students totally
+                                .ui.hidden.divider
 
-            .active.side
-              .ui.items
-                .item
-                  .ui.medium.image
-                    img.visible.content src="/static/images/contribute.jpg"
-                    blockquote
-                      p Two road diverged in a wood, and I --
-                      p I took the one less traveled by,
-                      p And that has made all the difference.
-                      footer
-                        | Robert Frost, 
-                        cite
-                          a href="https://en.wikipedia.org/wiki/The_Road_Not_Taken" target="_blank"
-                            | The Road Not Taken
-                  .content
-                    .header Contribution History 
-                    .meta I never work passively, I contribute actively
-                    .descrition
-                      .ui.list
-                        .item
-                          i.map.icon
-                          .content
-                            .ui.small.purple.header July, 2008 - October, 2010
-                            ul.ui.list
-                              li
-                                | <b>Hangzhou</b>: news translator, poetry editor at 
-                                a href="http://en.hangzhou.com.cn/" target="_blank" Hangzhou Net
-                              li
-                                | <b>Hailar, Mongolia</b>: hardhat labourer building 
-                                a href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E6%8B%89%E5%B0%94%E7%AB%99" target="_blank" Hailar Railway Station
-                              li <b>Wuhan</b>: security man at Cambridge Property Management Company
-                        .item
-                          i.map.icon
-                          .content
-                            .ui.small.purple.header June, 2012 - February, 2014
-                            ul.ui.list
-                              li
-                                | <b>Beijing and Guangde</b>: Buddhist monk and preacher at 
-                                a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%BC%80%E5%AF%BA_(%E5%8C%97%E4%BA%AC)" target="_blank" Tiankai Temple
+                .side
+                  .ui.items
+                    .item
+                      .ui.medium.image
+                        img.visible.content src="/static/images/contribute.jpg"
+                        blockquote
+                          p Two road diverged in a wood, and I --
+                          p I took the one less traveled by,
+                          p And that has made all the difference.
+                          footer
+                            | Robert Frost,
+                            cite
+                              a href="https://en.wikipedia.org/wiki/The_Road_Not_Taken" target="_blank"
+                                | The Road Not Taken
+                      .content
+                        .header Contribution History
+                        .meta I never work passively, I contribute actively
+                        .descrition
+                          .ui.list
+                            .item
+                              i.map.icon
+                              .content
+                                .ui.small.purple.header July, 2016 - Present
+                                ul.ui.list
+                                  li
+                                    | <b>Remotely</b>: technical partner for
+                                    a href="https://github.com/ppresume" target="_blank"
+                                      |  PPResume,  
+                                    a href="https://github.com/semantic-ui-forest" target="_blank"
+                                      | Semantic-UI-Forest
+                                    |   and other projects at PPType
 
-                        .item
-                          i.map.icon
-                          .content
-                            .ui.small.purple.header March, 2014 - September, 2014
-                            ul.ui.list
-                              li
-                                | <b>Wuhan</b>: insurance agent at 
-                                a href="http://en.cntaiping.com/" target="_blank" China Taiping Group
-                              li
-                                | <b>Shanghai</b>: translator and proofreader at 
-                                a href="https://site.douban.com/246051/" target="_blank" Enlightening Translation Study
+                            .item
+                              i.map.icon
+                              .content
+                                .ui.small.purple.header August, 2014 - January, 2016
+                                ul.ui.list
+                                  li
+                                    | <b>Shanghai</b>: Managing partner at
+                                    a href="http://weibo.com/dukoudukou" target="_blank"
+                                      |  Ford Independent Bookstore
 
-                        .item
-                          i.map.icon
-                          .content
-                            .ui.small.purple.header September, 2014 - December, 2015
-                            ul.ui.list
-                              li
-                                | <b>Shanghai</b>: salesman and writer at 
-                                a href="http://weibo.com/dukoudukou" target="_blank" Ford  Bookstore
+                            .item
+                              i.map.icon
+                              .content
+                                .ui.small.purple.header June, 2012 - March, 2014
+                                ul.ui.list
+                                  li
+                                    | <b>Beijing and Guangde</b>: Buddhist monk and preacher at
+                                    a href="https://zh.wikipedia.org/wiki/%E5%A4%A9%E5%BC%80%E5%AF%BA_(%E5%8C%97%E4%BA%AC)" target="_blank"
+                                      |  Tiankai Temple
 
-                        .item
-                          i.map.icon
-                          .content
-                            .ui.small.purple.header July, 2016 - Present 
-                            ul.ui.list
-                              li
-                                | <b>Remotely</b>: technical trainee and co-worker for 
-                                a href="https://github.com/ppresume" target="_blank" PPResume
-                                |  at PPType
-            .side
-              .ui.card
-                .content
-                  .header Education
-                  .descrition
-                    p 4
+                            .item
+                              i.map.icon
+                              .content
+                                .ui.small.purple.header July, 2008 - October, 2012, short-term roles
+                                ul.ui.list
+                                  li
+                                    | <b>Hangzhou</b>: news translator, poetry editor at
+                                    a href="http://en.hangzhou.com.cn/" target="_blank"
+                                      |  Hangzhou Net
+                                  li
+                                    | <b>Hailar, Mongolia</b>: hardhat labourer building
+                                    a href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E6%8B%89%E5%B0%94%E7%AB%99" target="_blank"
+                                      |  Hailar Railway Station
+                                  li <b>Wuhan</b>: security man at Cambridge Property Management Company
+                                  li
+                                    | <b>Wuhan</b>: insurance agent at
+                                    a href="http://en.cntaiping.com/" target="_blank"
+                                      |  China Taiping Group
+                                  li
+                                    | <b>Shanghai</b>: translator and proofreader at
+                                    a href="https://site.douban.com/246051/" target="_blank"
+                                      |  Enlightening Translation Study
 
-            .side
-              .ui.card
-                .content
-                  .header Education
-                  .descrition
-                    p 5
 
-            .side
-              .ui.card
-                .content
-                  .header Education
-                  .descrition
-                    p 6
+                .side
+                  .ui.items
+                    .item
+                      .content
+                        .header Disability
+                        .meta I live, love, and leave.
+                    .item
+                      .content
+                        p I have the disability of Epilepsy, without obvious causes. I've started to have grand mal seizures when I was 17(2006), after that, I may have 0 ~ 6 seizures every year. Luckily, I am still alive :-)
+                        p Here are some basic knowledge about Epilepsy:
+                        p <a href="https://en.wikipedia.org/wiki/Epileptic_seizure">Epileptic Seizures</a>
+                        p <a href="http://www.epilepsy.com/learn/epilepsy-101/what-happens-during-seizure">What happens during a seizure</a>
+                    .item
+                      .content
+                        h5 Eplilepsy seizure records(updating):
+                        ul
+                          li 2017.05.06, 17:30 ~ 17:45
+                          li 2016.06.10, 21:00 ~ 21:10
+                          li 2016.03.30, 19:00 ~ 19:18
+                          li 2016.02.03, 22:00 ~ 22:20
+                          li 2015.09.23, 20:00 ~ 20:13
+
+                .side
+                  .ui.items
+                    .item
+                      .content
+                        .header Competition
+                        .meta
+                        .descrition
+                          p I have attended the Zhihu Kanshan Cup Machine Learning Competition, which requires the competitors to classify the questions into 1 ~ 5 topics.
+                          p After some investigation, I have tried some open-source tools for multi-label text classfication on GitHub, and got ranked 16th/480 at first.
+                          p The site is:
+                          p <a href="https://biendata.com/competition/zhihu/">Zhihu Machine Learning Challenge 2017</a>
+                    .item
+                      .ui.image
+                        img.visible.content src="/static/images/zhihu_competition.jpg"
+
+
+                .side
+                  .ui.items
+                    .item
+                      .content
+                        .header Joke
+                        .meta
+                        .descrition
+                          p Q: How do you create light by using water?
+                          p A: Clean the windows!
+
 
 
 link href="/static/stylesheets/cube.css" rel="stylesheet" type="text/css"
+
 javascript:
     $('.ui.buttons > .ui.button').on('click', function(attr) {
         var tabId = $(this).attr('data-tab');
             $('.ui.shape').shape(tabId);
+              })
+    ;
+    $('#more_about.ui.button').on('click', function(attr) {
+        $("#more_modal.ui.modal").modal('show');
               })
     ;

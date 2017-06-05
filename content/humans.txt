@@ -1,19 +1,19 @@
 /* TEAM */
-Developer: Du Bing
+Developer: Bingo Du
 Contact: tarvos21 [at] gmail.com
-Github: @Du Bing
+Github: @tarvos21
 
-Designer: Du Bing
+Designer: Bingo Du
 Contact: tarvos21 [at] gmail.com
-Github: @Du Bing
+Github: @tarvos21
 
-Writer: Du Bing
+Writer: Bingo Du
 Contact: tarvos21 [at] gmail.com
-Github: @Du Bing
+Github: @tarvos21
 
-Maintainer: Du Bing
+Maintainer: Bingo Du
 Contact: tarvos21 [at] gmail.com
-Github: @Du Bing
+Github: @tarvos21
 
 /* THANKS */
 Nanoc(http://nanoc.ws/)
@@ -27,8 +27,9 @@ Linux Libertine(www.linuxlibertine.org/)
 Ruby(https://www.ruby-lang.org/)
 Semantic-UI(http://semantic-ui.com/)
 Nanoc-Plate(http://nanoc-plate.github.io/)
+GitHub-Cards(https://github.com/lepture/github-cards)
 
 /* SITE */
-Last updated: 2017/01/29
+Last updated: 2017/06/05
 Languages: Chinese/English
 Doctype: HTML5

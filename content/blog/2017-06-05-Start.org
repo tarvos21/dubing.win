@@ -1,0 +1,21 @@
+#+TITLE: Start
+
+#+BEGIN_QUOTE
+Man has a large capacity for effort. In fact it is so much greater than we think it is that few ever reach this capacity.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+We should value the faculty of knowing what we ought to do and having the will to do it. Knowing is easy; it is the doing that is difficult. The critical issue is not what we know but what we do with what we know. The great end of life is not knowledge, but action.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+I believe that it is the duty of each of us to act as if the fate of the world depended on him ... we must live for the future, not for our own comfort or success.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+-- Hyman G. Rickover
+#+END_QUOTE
+
+
+
+Welcome to my new blog :-)

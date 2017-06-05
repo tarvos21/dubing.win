@@ -1,6 +1,6 @@
 FROM ruby:2.3
 
-MAINTAINER Xiao Hanyu <xiaohanyu1988@gmail.com>
+MAINTAINER Bingo Du <tarvos21@gmail.com>
 
 # Install vim and less
 RUN apt-get update && apt-get install --yes vim less

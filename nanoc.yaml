@@ -121,11 +121,11 @@ checks:
     #   exclude_files: ['blog/page']
     exclude_files: []
 
-base_url: http://dubing.win
+base_url: http://dubing.me
 
 meta:
   # Default title, that is added to an item's own title
-  title: Bingo | Develop to Know and Love
+  title: Develop to Know and Love
 
   # Default author of a page
   author: Bingo Du
@@ -134,7 +134,7 @@ meta:
   email: tarvos21@gmail.com
 
   # Default keywords to use when an item does not specify its own
-  keywords: Bingo Du, tarvos21, Du Bing, 杜兵 
+  keywords: Bingo Du, tarvos21, Du Bing, 杜兵
 
   # Default description to use when an item does not specify its own
-  description: Bingo Du, tarvos21, Du Bing, 杜兵 
+  description: Bingo Du, tarvos21, Du Bing, 杜兵
