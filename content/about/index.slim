@@ -29,15 +29,15 @@
         li Gulp
         li Bash, Oh-My-Zsh, Tmux
       br
-      p For interests and curiosity, I have also tried some machine learning libraries, including OpenAI Gym and Universe, Tensoflow, Keras and and Caffe. I have configured and run them successfully on the Google Cloud Platform VM and AWS Instances with Tesla K80 GPU.
-      p My email is <strong>tarvos21@gmail.com</strong>, feel free to drop me anything interesting. You can also click <strong>"Contact Me"</strong> on the top right and send a message to me directly.
+      p For interests and curiosity, I have also tried some machine learning libraries, including OpenAI Gym and Universe, Tensorflow, Keras and and Caffe. I have configured and run them successfully on the Google Cloud Platform VM and AWS Instances with Tesla K80 GPU.
+      p My email is <strong>tarvos21@gmail.com</strong>, feel free to drop me anything. You can also click <strong>"Contact Me"</strong> on the top right and send a message to me directly.
       hr
   .row
     .ui.basic.segment
-      .ui.big.primary.button data-tooltip="Less relevant with tech" data-position="right center" data-inverted="" data-variation="mini" id="more_about"
+      .ui.big.primary.button data-tooltip="Less relevant with tech" data-position="right center" data-inverted="" data-variation="mini" id="moreAbout"
         | More about me
 
-  .ui.fullscreen.modal[id="more_modal"]
+  .ui.fullscreen.modal[id="moreModal"]
       .ui.center.aligned.container.grid
         .row
           .ui.blue.inverted.segment data-tooltip="Click buttons to roll the cube and discover 6 aspects of Bingo" data-variation="large" data-inverted="" data-position="top right"
@@ -268,7 +268,7 @@ javascript:
             $('.ui.shape').shape(tabId);
               })
     ;
-    $('#more_about.ui.button').on('click', function(attr) {
-        $("#more_modal.ui.modal").modal('show');
+    $('#moreAbout.ui.button').on('click', function(attr) {
+        $("#moreModal.ui.modal").modal('show');
               })
     ;
