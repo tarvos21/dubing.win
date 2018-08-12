@@ -114,7 +114,7 @@ compile '/{index,about}.*' do
   layout item[:layout] || '/default.*'
 end
 
-compile '/{sitemap}.xml' do
+compile '/{atom,sitemap}.xml' do
   filter :erb
 end
 
