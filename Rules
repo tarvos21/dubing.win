@@ -45,6 +45,7 @@ passthrough '/posts/static/**/*'
 passthrough '/humans.txt'
 passthrough '/robots.txt'
 passthrough '/type/js/**/*'
+passthrough '/dueros/**/*'
 
 compile '/random/index.*' do
   ext = item[:extension]

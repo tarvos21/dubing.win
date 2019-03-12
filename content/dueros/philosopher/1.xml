@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+    <url>
+        <loc>https://dubing.me/dueros/philosopher/1.xml</loc>
+        <lastmod>2019-03-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <data>
+            <display>
+                <action>add</action>
+                <source_id>1</source_id>
+                <source_name>b1c1caea-7734-46e7-d717-e332f7185f6d</source_name>
+                <source_type>news</source_type>
+                <update_time>1552406902</update_time>
+                <tags>哲学,人文</tags>
+                <title>哲学家语录第一段</title>
+                <abstract>人生三变，第一为骆驼，第二为狮子，第三为婴儿。</abstract>
+                <content>人生三变，第一为骆驼，第二为狮子，第三为婴儿。</content>
+            </display>
+        </data>
+    </url>
+</urlset>
